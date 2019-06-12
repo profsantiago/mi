@@ -55,6 +55,7 @@ public class IngresoDeFactura extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(jTable1);
 
+        jLabel1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel1.setText("No.");
 
         jLabel2.setBackground(new java.awt.Color(0, 0, 0));
