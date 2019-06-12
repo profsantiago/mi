@@ -60,7 +60,7 @@ public class JPingCL extends javax.swing.JPanel {
     jLabel4.setForeground(new java.awt.Color(255, 255, 255));
     jLabel4.setText("telefono:");
 
-    jButton1.setFont(new java.awt.Font("DokChampa", 1, 18)); // NOI18N
+    jButton1.setFont(new java.awt.Font("DokChampa", 1, 14)); // NOI18N
     jButton1.setForeground(new java.awt.Color(255, 255, 255));
     jButton1.setText("INGRESAR");
 
@@ -111,7 +111,7 @@ public class JPingCL extends javax.swing.JPanel {
       layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
       .addGroup(layout.createSequentialGroup()
         .addGap(12, 12, 12)
-        .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
+        .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 34, Short.MAX_VALUE)
         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
           .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -130,7 +130,7 @@ public class JPingCL extends javax.swing.JPanel {
           .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         .addGap(29, 29, 29)
         .addComponent(jButton1)
-        .addContainerGap(58, Short.MAX_VALUE))
+        .addContainerGap(60, Short.MAX_VALUE))
     );
   }// </editor-fold>//GEN-END:initComponents
 
