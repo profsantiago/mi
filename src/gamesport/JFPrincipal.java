@@ -30,13 +30,45 @@ public class JFPrincipal extends javax.swing.JFrame {
   private void initComponents() {
 
     jButton1 = new javax.swing.JButton();
+    jButton2 = new javax.swing.JButton();
+    jButton3 = new javax.swing.JButton();
+    jButton4 = new javax.swing.JButton();
+    jButton5 = new javax.swing.JButton();
 
     setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-    jButton1.setText("jButton1");
+    jButton1.setText("Ingreso de cliente");
     jButton1.addActionListener(new java.awt.event.ActionListener() {
       public void actionPerformed(java.awt.event.ActionEvent evt) {
         jButton1ActionPerformed(evt);
+      }
+    });
+
+    jButton2.setText("Ingreso de factura");
+    jButton2.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton2ActionPerformed(evt);
+      }
+    });
+
+    jButton3.setText("Ingreso de nuevo producto");
+    jButton3.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton3ActionPerformed(evt);
+      }
+    });
+
+    jButton4.setText("Busqueda de cliente");
+    jButton4.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton4ActionPerformed(evt);
+      }
+    });
+
+    jButton5.setText("Vendedor");
+    jButton5.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton5ActionPerformed(evt);
       }
     });
 
@@ -45,25 +77,66 @@ public class JFPrincipal extends javax.swing.JFrame {
     layout.setHorizontalGroup(
       layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
       .addGroup(layout.createSequentialGroup()
-        .addGap(128, 128, 128)
-        .addComponent(jButton1)
-        .addContainerGap(195, Short.MAX_VALUE))
+        .addGap(39, 39, 39)
+        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+          .addComponent(jButton2)
+          .addComponent(jButton1))
+        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+          .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addComponent(jButton3)
+            .addGap(18, 18, 18))
+          .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addComponent(jButton4)
+            .addGap(31, 31, 31))))
+      .addGroup(layout.createSequentialGroup()
+        .addGap(148, 148, 148)
+        .addComponent(jButton5)
+        .addGap(0, 0, Short.MAX_VALUE))
     );
     layout.setVerticalGroup(
       layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-      .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-        .addContainerGap(183, Short.MAX_VALUE)
-        .addComponent(jButton1)
-        .addGap(85, 85, 85))
+      .addGroup(layout.createSequentialGroup()
+        .addGap(102, 102, 102)
+        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+          .addComponent(jButton1)
+          .addComponent(jButton4))
+        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+          .addComponent(jButton2)
+          .addComponent(jButton3))
+        .addGap(34, 34, 34)
+        .addComponent(jButton5)
+        .addContainerGap(62, Short.MAX_VALUE))
     );
 
     pack();
   }// </editor-fold>//GEN-END:initComponents
 
   private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-   JFingresoFactura infac = new JFingresoFactura();
-    infac.setVisible(true);
+  JFingCliente inClie = new JFingCliente();
+    inClie.setVisible(true);
   }//GEN-LAST:event_jButton1ActionPerformed
+
+  private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+     JFingresoFactura infac = new JFingresoFactura();
+    infac.setVisible(true);
+  }//GEN-LAST:event_jButton2ActionPerformed
+
+  private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    JFnuevosProductos Nprod = new JFnuevosProductos();
+    Nprod.setVisible(true);
+  }//GEN-LAST:event_jButton3ActionPerformed
+
+  private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+   JFbusCliente busClie = new JFbusCliente();
+    busClie.setVisible(true);
+  }//GEN-LAST:event_jButton4ActionPerformed
+
+  private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    JFvendedor ven = new JFvendedor();
+    ven.setVisible(true);
+  }//GEN-LAST:event_jButton5ActionPerformed
 
   /**
    * @param args the command line arguments
@@ -72,5 +145,9 @@ public class JFPrincipal extends javax.swing.JFrame {
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JButton jButton1;
+  private javax.swing.JButton jButton2;
+  private javax.swing.JButton jButton3;
+  private javax.swing.JButton jButton4;
+  private javax.swing.JButton jButton5;
   // End of variables declaration//GEN-END:variables
 }
